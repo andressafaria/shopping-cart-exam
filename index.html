@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8" />
+
+<title>Carrinho de compras</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster" />
+<link rel="stylesheet" href="assets/css/pure-min.css" />
+<link rel="stylesheet" href="assets/css/main.css" />
+
+</head>
+<body>
+
+<header>
+	<h1>Carrinho de compras</h1>
+</header>
+
+<form class="pure-form pure-form-aligned">
+	<fieldset>
+		<div class="pure-control-group">
+			<label for="description">Description:</label>
+			<input id="description" type="text" placeholder="description" required>
+		</div>
+
+		<div class="pure-control-group">
+			<label for="qtd">Quantidade:</label>
+			<input id="qtd" type="qtd" placeholder="quantidade" required>
+		</div>
+		<div class="pure-control-group">
+			<label for="price">Price:</label>
+			<input id="price" type="price" placeholder="price" required>
+		</div>
+		
+		<div class="pure-controls">
+			<button type="submit" class="pure-button pure-button-primary">Submit</button>
+		</div>
+	</fieldset>
+</form>
+
+<section id="listCarts">
+</section>
+
+<script src="assets/js/libs/jquery.min.js"></script>
+<script src="assets/js/libs/md5.min.js"></script>
+<script src="assets/js/ShoppingService.js"></script>
+<script src="assets/js/ShoppingController.js"></script>
+
+</body>
+</html>
